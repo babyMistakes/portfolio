@@ -1,0 +1,768 @@
+/**********************************Resets*************************************************/
+
+/************These styles should remain near the top for cascading purposes************/
+/***********************Links*********************/
+a {
+    margin:0 auto;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+.modal-open .modal,.btn:focus{
+    outline:none!important
+}
+button:focus {
+    outline:none!important
+}
+/***********************Buttons******************/
+button {
+    background: none;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;  
+}
+button:hover {
+    background: none;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+}
+button:active {
+    background: none;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+}
+button:focus {
+    background: none;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+}
+button:visited {
+    background: none;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+}
+/************************Modal********************/
+.modal-dialog, .modal-lg, .modal-content {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+}
+/********************************End of Resets*******************************************/
+
+/**********************************Global******************************************************/
+html, body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    min-width: 655px;
+}
+.container-fluid {
+    background: transparent;
+    height: 100%;
+    min-width: 655px;
+}
+.carousel { z-index: -99; } 
+.carousel .item {
+    position: fixed; 
+    opacity: .9;
+    left:0 !important;
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+.carousel .one {
+    background: url(../images/apolloEarth2.jpg);
+    background-size: cover;
+    background-position: center;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(../images/apolloEarth3.jpg);
+    background-size: cover;
+    background-position: center;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(../images/apolloEarth4.jpg);
+    background-size: cover;
+    background-position: center;
+    -moz-background-size: cover;
+}
+.carousel .active {
+    opacity: 1 !important;
+}
+.carousel .left {
+    opacity: 1 !important;
+    -webkit-transition: opacity 2s  !important;
+    -moz-transition: opacity 2s  !important;
+    -ms-transition: opacity 2s  !important;
+    -o-transition: opacity 2s  !important;
+    transition: opacity 2s  !important;
+}
+.container-fluid {
+    padding:0;
+    position: relative;
+}
+.mobileBackground {
+    display: none;
+}
+.navAndLogo {
+    position: fixed;
+    width: 100%;
+    top: 60%;
+}
+#sectionSpacers {
+    z-index: -100;
+    opacity: 0;
+}
+.sectionSpacer {
+    height: 50%;
+}
+
+/********************************End Of Global****************************************/
+
+/*************************Main Logo Button and Containers******************************/
+.logoContainer {
+    width: 100%;
+    height: 192px;
+    background: rgba(250,250,230,.4);
+    position: absolute;
+    top: -22px;
+    z-index: 99;
+    min-width: 475px;
+    border-top: 2px solid rgba(182,55,40,1);
+    border-bottom: 2px solid rgba(182,55,40,1);
+}
+.mainLogoButton {
+    position: relative;
+    top: -16px;
+    margin: 0 auto;
+    width: 223px;
+    height: 223px;
+    border-radius: 200px;
+    transition: all .1s;
+}
+.mainLogoButton:hover {
+    background-color: rgba(250,250,230,.4);
+}
+.mainLogo {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+/***********************************End Of Logo****************************************/
+
+/**********************************Nav Containers***************************************/
+.navContainer {
+    position: relative;
+    width: 100%;
+    min-width: 475px;
+}
+#navContainer {
+   top: -2000px;
+}
+.navCircle {
+    position: relative;
+    height: 32em;
+    width: 32em;
+    min-width: 410px;
+    border-radius: 420px;
+    border: 2px solid rgba(182,55,40,1);
+    border-bottom: none;
+    margin: auto;
+    padding-top: 20px;
+    visibility: visible;
+    background: transparent;  
+}
+nav.navInnerCircle {
+    position: relative;
+    height: 19em;
+    width: 19em;
+    margin: auto;
+    background: rgba(250,250,230,.6);
+    border-radius: 350px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(250,250,230,.9);
+    overflow:hidden;
+}
+#navInnerCircle {
+    top: 2700px;  
+}
+/************************************Nav Buttons************************************************/
+#link1 {
+    position:absolute;
+    top: 79px;
+    left: -4px;
+    height: 95px;
+    width: 113px;
+    padding-top: 43px;
+    padding-right: 17px;
+    border: none;
+    border-right: solid 2px rgba(182,55,40,1);
+    border-bottom: solid 2px rgba(182,55,40,1);
+    border-left: solid 2px transparent;
+    border-top: solid 2px transparent;
+    transition: all ease .1s;
+    background: rgba(182,55,40,1);
+    margin: auto;
+    text-align: right;
+}
+#link1:hover {
+    border: solid 2px rgba(182,55,40,1);
+    border-bottom: solid 2px transparent;
+    background: rgba(250,250,230,1);
+    color: rgba(182,55,40,1);
+    font-weight: 600;
+    z-index: 100;
+}
+#link2 {
+    position: absolute;
+    top: -14px;
+    left: 107px;
+    width: 165px;
+    height: 95px;
+    padding-top: 43px;
+    text-align: center;
+    border: solid 2px transparent;
+    border-bottom: solid 2px rgba(182,55,40,1);
+    background: rgba(182,55,40,1);
+    transition: all ease .1s;
+}
+#link2:hover {
+    border: solid 2px rgba(182,55,40,1);
+    border-top: 2px solid transparent;
+    background: rgba(250,250,230,1);
+    color: rgba(182,55,40,1);
+    font-weight: 600;
+    z-index: 100;
+}
+#link3 {
+    position:absolute;
+    top: 79px;
+    left: 270px;
+    height: 95px;
+    width: 113px;
+    text-align: left;
+    padding-left: 17px;
+    padding-top: 43px;
+    border: solid 2px transparent;
+    border-left: solid 2px rgba(182,55,40,1);
+    border-bottom: solid 2px rgba(182,55,40,1);
+    background: rgba(182,55,40,1);
+    transition: ease all .1s;
+}
+#link3:hover {
+    border: solid 2px rgba(182,55,40,1);
+    border-bottom: solid 2px transparent;
+    background: rgba(250,250,230,1);
+    color: rgba(182,55,40,1);
+    font-weight: 600;
+    z-index: 100;
+}
+.aboutButton {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    border-radius: 4em;
+    border: solid 2px transparent;
+    background: rgba(182,55,40,1);
+    color: rgba(250,250,230,.9);
+    transition: all ease .1s;
+    overflow: hidden;
+
+}
+.aboutButton:hover {
+    background: rgba(250,250,230,1);
+    color: rgba(182,55,40,1);
+    font-weight: 600;
+    border: solid 2px rgba(182,55,40,1);
+}
+#link4 {
+    position:absolute;
+    margin: 0 auto; 
+    top: 88px;
+    left: 116px;
+    height: 102px;
+    width: 147px;
+    text-align: center;
+    border: solid 2px transparent;
+    transition: all ease .1s;
+}
+#link4:hover {
+    /*
+    color: rgba(255,255,255,.9);
+    border: 2px solid rgba(0,0,0,.9);
+    background: rgba(255,255,255,.6);
+    */
+    background: transparent;
+    border: solid 2px transparent;
+    color: transparent;
+    z-index: 101;
+}
+.innerAboutShape {
+    visibility: hidden;
+    position: absolute;
+    height: 222px;
+    width: 222px;
+    border-radius: 400px;
+    top: 67px;
+    right: -63px;
+    background: rgba(250,250,230,.9);
+    
+}
+.navShape1 {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    top: 196px;
+    left: 110px;
+    border: none;
+    background-color: none;
+}
+.navShape2 {
+    position: absolute;
+    height: 222px;
+    width: 222px;
+    margin: auto;
+    left: -30px;
+    bottom: -26px;
+    border-radius: 400px;
+    border: solid 2px rgba(182,55,40,1);
+    background: rgba(0,0,0,0);
+    z-index: 99;
+}
+/**********************************End Of Navigation****************************************/
+/***********************Footer*************************************/
+.footer {
+    height: 100px;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    border-top: solid 2px rgba(182,55,40,1);
+    text-align: center;
+    z-index: 1000;
+    padding: 0;
+}
+footer a:nth-of-type(2) {
+    margin: 0 8%;
+}
+footer a {
+    display: inline-block;
+    height: 90%;
+    padding-top: 1em;
+    opacity: .7;
+    margin: 0 auto;
+}
+
+/************************************Modals******************************************/
+/*************Global Modal*****************/
+.myImagesModal {
+    padding: none;
+}
+.globalOuter {
+    position: relative;
+    background: rgba(31,37,41,.6);
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    font-size: 18px; 
+    width: 80%;
+    border: 1px solid rgba(250,250,230,1);
+}
+.globalInner {  
+    color: rgba(250,250,230,1);
+    margin: 0 auto;
+}
+.modalExit {
+    position: absolute;
+    display: inline-block;
+    padding: 0 22px;
+    line-height: 130%;
+    top: 11px;
+    left: 11px;
+    background: rgba(182,55,40,.8); 
+    border: 1px solid transparent;
+    font-size: 70px;
+    font-weight: 700;
+}
+.modalExit:hover {
+    background: transparent; 
+    border: 2px solid rgba(182,55,40,1);
+    font-weight: 700;
+    color: rgba(182,55,40,1);
+}
+.bottomExit {
+    text-align: right;
+    padding: 8.5px;
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.modalExitBottom {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0;
+    background: rgba(182,55,40,.8); 
+    border: 2px solid transparent;
+    font-size: 34px;
+    font-weight: 700;
+}
+.modalExitBottom:hover {
+    background: transparent; 
+    border: 2px solid rgba(182,55,40,1);
+    color: rgba(182,55,40,1);
+    font-weight: 700;
+}
+heading.modalHeading { 
+    width: 100%;
+}
+.modalHeading p {
+    margin:0 auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+heading {
+    padding: 0;
+}
+h3 {
+    border: 1px solid rgba(250,250,230,1);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 220%;
+    padding-bottom: 0;
+    font-size: 52px;
+}
+h4 {
+    margin: 0 auto;
+    padding-left: .7em;
+    line-height: 250%;
+    font-size: 40px;
+}
+.whiteBlock {
+    display: inline-block;
+    padding-right: 4%;
+    line-height: 210%;
+    border-right: 25px solid rgba(250,250,230,1);
+}
+.whiteBlock2{
+    display: inline-block;
+    padding-right: 4%;
+    line-height:  210%;
+    border-right: 50px solid rgba(250,250,230,1);
+}
+.h3Two {
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.galleryTitle {
+    display: inline-block;
+    width: 100%;
+    line-height: 250%;
+    border-bottom: 1px solid rgba(250,250,230,1);
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.imageGallery {
+    margin: 0 auto;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+/****************
+.imageContainer {
+    width: 100%;
+    padding: 5%;
+    border-bottom: 2px solid rgba(255,255,255,.8);
+}
+*****************/
+.imageGallery img {
+    width: 100%;
+    margin: 0 auto;
+}
+/*********************Images Modal******************/
+.whiteBlockH3 {
+    display: inline-block;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 190%;
+    border-right: 70px solid rgba(250,250,230,1);
+    border-left: 10px solid rgba(250,250,230,1);
+}
+/********************Web Design Modal*****************/
+.whiteBlockH32 {
+    display: inline-block;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 190%;
+    border-right: 60px solid rgba(250,250,230,1);
+    border-left: 20px solid rgba(250,250,230,1);
+}
+.whiteBlockH33 {
+    display: inline-block;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 190%;
+    border-right: 50px solid rgba(250,250,230,1);
+    border-left: 30px solid rgba(250,250,230,1);
+}
+.whiteBlockH33 {
+    display: inline-block;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 190%;
+    border-right: 50px solid rgba(250,250,230,1);
+    border-left: 30px solid rgba(250,250,230,1);
+}
+.whiteBlockH34 {
+    display: inline-block;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 190%;
+    border-right: 80px solid rgba(250,250,230,1);
+    border-left: 0px solid rgba(250,250,230,1);
+}
+.siteTitle {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(250,250,230,1);
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.siteGallery {
+    margin-bottom: 0;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(250,250,230,1);
+}
+a.siteLink {
+    display: inline-block;
+    border: none;
+    color: rgba(250,250,230,1);
+    margin-left: 3%;
+    line-height: 210%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background: rgba(182,55,40,.8); 
+    border-left: solid 1px rgba(182,55,40,1);
+    border-right: solid 1px rgba(182,55,40,1);
+    color: rgba(250,250,230,1);
+    font-weight: 600;
+}
+a.siteLink:hover {
+    text-decoration: none;
+    border-left: solid 2px rgba(182,55,40,1); 
+    border-right: solid 2px rgba(182,55,40,1);
+    background: transparent;
+    color: rgba(182,55,40,1);
+}
+.siteGalleryPhonegap {
+    border-bottom: none;
+    border-right: 1px solid rgba(250,250,230,1);
+}
+.siteGalleryDistrict {
+    border-bottom: none;
+    border-right: none;
+}
+.mobileGallery {
+    border-bottom: 1px solid rgba(250,250,230,1);
+}
+.mobileTitle {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.mobileWhiteBlock {
+    position: relative;
+    display: inline-block;
+    border-right: solid 24px rgba(250,250,230,1);
+    padding-right: 6%;
+    line-height: 220%;
+}
+.firstMobileImage {
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.mobileGallerySparkle {
+    border-left: 1px solid rgba(250,250,230,1);
+    border-top: 1px solid rgba(250,250,230,1);
+}
+.mobileGalleryPhonegap {
+    border-left: none;
+}
+.mobileGalleryDistrict {
+    border-bottom: none;
+    border-top: 1px solid rgba(250,250,230,1);
+    border-left: solid 1px rgba(250,250,230,1);
+}
+/************************Sounds Modal****************/
+iframe {
+    margin: -.15em auto; 
+    opacity: .8;
+    border: none;
+    height: 7em;
+    border-radius: 0px;
+    width: 100%;
+}
+.topIframe {
+    margin-top: 0;
+    margin-bottom: -.2em;
+}
+.bottomIframe {
+    margin-bottom: -.4em;
+}
+/***************************About Modal****************/
+.galleryTitleAbout {
+    border-bottom: none;
+}
+a.email {
+    display: inline-block;
+    border-left: solid 2px rgba(182,55,40,.8);
+    border-right: solid 2px rgba(182,55,40,.8);
+    color: rgba(250,250,230,1);
+    margin-left: 3%;
+    line-height: 200%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background: rgba(182,55,40,.8); 
+    border-left: solid 1px rgba(182,55,40,.8);
+    border-right: solid 1px rgba(182,55,40,.8);
+    color: rgba(250,250,230,1);
+    font-weight: 600;
+}
+a.email:hover {
+    text-decoration: none;
+    border-left: solid 2px rgba(182,55,40,.8); 
+    border-right: solid 2px rgba(182,55,40,.8);
+    background: transparent;
+    color: rgba(182,55,40,1);
+    
+}
+/***********Modal Media Queries************/
+@media (max-width: 1199px) {
+    #myCarousel {
+        display: none;
+    }
+    .carousel .one {
+        background: url(../images/apolloEarth2small.jpg);
+        background-size: cover;
+        background-position: center;
+        -moz-background-size: cover;
+    }
+    .carousel .two {
+        background: url(../images/apolloEarth3small.jpg);
+        background-size: cover;
+        background-position: center;
+        -moz-background-size: cover;
+    }
+    .carousel .three {
+        background: url(../images/apolloEarth4small.jpg);
+        background-size: cover;
+        background-position: center;
+        -moz-background-size: cover;
+    }
+    .mobileBackground {
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/apolloEarth4small.jpg);
+        background-size: cover;
+        -moz-background-size: cover;
+        background-position: center;
+    }
+    #sectionSpacers {
+        display: none;
+    }
+    footer {
+        position: absolute;
+        bottom: -150px;
+    }
+    .globalOuter {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0; 
+        width: 100%;
+        border-bottom: 1px solid rgba(250,250,230,1);
+    }
+    .globalInner {  
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border: none;
+    }
+    .imageGallery {
+        border-top: 1px solid rgba(250,250,230,1);
+        border-bottom: 1px solid rgba(250,250,230,1);
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .imagesGallery1 {
+        margin: 0 auto;
+        border-top: 1px solid rgba(250,250,230,1);
+        border-bottom: none;
+    }
+    .imagesGallery2 {
+        border-bottom: none;
+    }
+    .heading {
+        border-bottom: 1px solid rgba(250,250,230,1);
+    }
+    h3 {
+        margin-top: 0;   
+    }
+    h4 {
+        padding-left: 3.6%;
+    }
+    .h3Two {
+        border-top: none;
+    }
+    .modalHeading p {
+        padding-left: 3.6%;
+        padding-right: 3.6%;
+    }
+    .galleryTitle {
+        border-bottom: none;
+    }
+    .mobileGallery {
+        display: none;
+    }
+    .siteGallery {
+        border-bottom: none;
+    }
+    .siteTitle {
+        border-top: none;
+    }
+    .bottomExit {
+        border-bottom: 1px solid rgba(250,250,230,1);
+}
+    
+}
